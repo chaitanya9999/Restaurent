@@ -26,14 +26,14 @@ public class MenuDAO {
 			
 			
 			while (rs.next())
-				items.addAll(items);
+				
 				Item item = new Item();
 				item.setName(rs.getString("name"));
 				item.setPrice(rs.getDouble("price"));
 				item.setCategory(rs.getString("category"));
 				item.setType(rs.getString("type"));
-				
-				
+				items.add(item);
+				return items;
 				con.close();
 	
 
