@@ -69,9 +69,6 @@ public class RestaurentMenu {
 
 				// System.out.println(item12.getName());
 			}
-
 		}
-
 	}
-
 }

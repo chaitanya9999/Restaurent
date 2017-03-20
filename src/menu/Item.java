@@ -37,9 +37,7 @@ public class Item {
 		this.price=price;
 		this.category=category;
 		this.type=type;
-		
-		
-	}
+}
 	
 	@Override
 	public String toString() {
