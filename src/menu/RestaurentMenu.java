@@ -49,23 +49,23 @@ public class RestaurentMenu{
 		items.addAll(breakfast.getItems());
 		items.addAll(lunch.getItems());
 		
-		System.out.println("Restaurant Name:"+ details.getName() +"\n" +"Address:"+ details.getAddress() + "\n"+"Phone Number:"+ +details.getPhoneNumberL() +"\n"+"Email:" +details.getEmail() +"\n" +"Website Name:"+ details.getWebSiteName());
-		System.out.println("***************");
+	//	System.out.println("Restaurant Name:"+ details.getName() +"\n" +"Address:"+ details.getAddress() + "\n"+"Phone Number:"+ +details.getPhoneNumberL() +"\n"+"Email:" +details.getEmail() +"\n" +"Website Name:"+ details.getWebSiteName());
+	//	System.out.println("***************");
 		
-		System.out.println("Starters:");
+		//System.out.println("Starters:");
 		
 		for(Item item11: items){
 			if(item11.getCategory()=="Starter"){
-				System.out.println(item11.getName());
+				//System.out.println(item11.getName());
 			}
 		}
 		
-		System.out.println("Rice:");
+		//System.out.println("Rice:");
 		
 	for(Item item12: items){
 			if(item12.getCategory()=="rice"){
 
-				System.out.println(item12.getName());
+				//System.out.println(item12.getName());
 			}
 		
 		}
