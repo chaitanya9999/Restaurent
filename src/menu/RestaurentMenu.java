@@ -16,7 +16,7 @@ public class RestaurentMenu {
 		
 		ItemDAO getitem =new ItemDAO();
 		
-	
+
 		
 		ArrayList<Item> items = getitem.returnitems();
 		
@@ -36,7 +36,16 @@ public class RestaurentMenu {
 	
 			
 		
+		Menu breakfast = new Menu();
+		Menu lunch = new Menu();
+		Menu dinner = new Menu();
+		
+		items.addAll(breakfast.getItems());
+		items.addAll(lunch.getItems());
+		items.addAll(dinner.getItems());
 
+		
+		
 
 		
 		/*breakfast.addItem(item3);
