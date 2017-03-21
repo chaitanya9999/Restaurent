@@ -6,11 +6,11 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class MenuDAO {
+public class ItemDAO {
 	
 
 	
-	public ArrayList<Item> connect() {
+	public ArrayList<Item> returnitems() {
 
 		Connection con = null;
 		ArrayList<Item> items = new ArrayList<Item>();
@@ -21,11 +21,11 @@ public class MenuDAO {
 
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurent", "root", "chaitu@369");
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from breakfast");
+			ResultSet rs = stmt.executeQuery("select * from items");
 		    
 			
 			
-			while (rs.next())
+			while (rs.next()){
 				
 				Item item = new Item();
 				item.setName(rs.getString("name"));
@@ -33,10 +33,9 @@ public class MenuDAO {
 				item.setCategory(rs.getString("category"));
 				item.setType(rs.getString("type"));
 				items.add(item);
-				return items;
-				con.close();
-	
-
+				con.close();{
+				}
+			}
 		} catch (Exception e) {
 			System.out.println("Exception at Connect(): " +e);
 	}

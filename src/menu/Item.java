@@ -39,10 +39,7 @@ public class Item {
 		this.type=type;
 }
 	
-	@Override
-	public String toString() {
-		return "Item [name=" + name + ", price=" + price + ", category=" + category + ", type=" + type + "]";
-	}
+	
 	public Item() {
 		// TODO Auto-generated constructor stub
 	}
