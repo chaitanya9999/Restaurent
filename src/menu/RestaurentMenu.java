@@ -24,13 +24,12 @@ public class RestaurentMenu {
 		
 		for(Item item: items){
 			if (item.getCategory() == "starters") {
-				 System.out.println(item.getName());
 			}
 				 else if (item.getCategory() == "tiffen"){
-					 System.out.println(item.getPrice());}
-				 else  {
 					 
-						 System.out.println(item.getName());
+				 }
+				 else  {
+			
 					 }
 			}
 	
@@ -40,13 +39,12 @@ public class RestaurentMenu {
 		Menu lunch = new Menu();
 		Menu dinner = new Menu();
 		
-		items.addAll(breakfast.getItems());
-		items.addAll(lunch.getItems());
-		items.addAll(dinner.getItems());
-
+		breakfast.addItem(item);
+		lunch.addItem(item);
+		dinner.addItem(item);
 		
 		
-
+		
 		
 		/*breakfast.addItem(item3);
 		breakfast.addItem(item4);

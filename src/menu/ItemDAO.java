@@ -21,7 +21,7 @@ public class ItemDAO {
 
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurent", "root", "chaitu@369");
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from items");
+			ResultSet rs = stmt.executeQuery("select * from breakfast");
 		    
 			
 			
