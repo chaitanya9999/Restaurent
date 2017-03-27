@@ -5,7 +5,6 @@ public class Item {
 	private double price;
 	private String category;
 	private String type;
-	
 	public String getName() {
 		return this.name;
 	}
@@ -19,7 +18,6 @@ public class Item {
 		
 		return this.type;
 	}
-	
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -38,11 +36,7 @@ public class Item {
 		this.category=category;
 		this.type=type;
 }
-	
-	
 	public Item() {
 		// TODO Auto-generated constructor stub
 	}
-	
-
-}
+	}

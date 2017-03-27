@@ -1,5 +1,4 @@
 package menu;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -7,9 +6,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 public class ItemDAO {
-	
-
-	
 	public ArrayList<Item> returnitems() {
 
 		Connection con = null;
@@ -21,10 +17,8 @@ public class ItemDAO {
 
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/restaurent", "root", "chaitu@369");
 			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select * from breakfast");
+			ResultSet rs = stmt.executeQuery("select * from items");
 		    
-			
-			
 			while (rs.next()){
 				
 				Item item = new Item();
@@ -33,13 +27,13 @@ public class ItemDAO {
 				item.setCategory(rs.getString("category"));
 				item.setType(rs.getString("type"));
 				items.add(item);
+		}
 				con.close();{
-				}
+				
 			}
 		} catch (Exception e) {
 			System.out.println("Exception at Connect(): " +e);
 	}
 		return items;
 	}
-  
-}
+ }
